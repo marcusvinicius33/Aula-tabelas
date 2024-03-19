@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        /*É possível configurar qualquer área da tabela.
+        Organizando primeiramente a tabela, depois por linhas,e os dados.
+        Obs. É opcional na html 5 o fechamento das tag que compõe uma tabela, como exemplificado na segunda linha da tabela abaixo, que estão dispostos sem a tag de fechamento.*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            /*(border-collapse: separate.) O border-collapse seleciona o modelo de borda de uma tabela; e as Bordas separadas (separate) é o valor padrão de uma tabela.*/
+            border-collapse: collapse; /*O collapse, une, junta as bordas da tabela*/
+           
+        }
+        tr.linha {
+            background-color: rgba(79, 241, 79, 0.552); /*usando uma class pra configurar a linha.*/
+        }
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        td.dado {
+            background-color: rgba(255, 255, 0, 0.581);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela.</h1>
+    <!-- HIERARQUIA DE TABELAS (simples)
+    TABLE: Tabela
+       TABLE ROW (tag tr): Linha de tabela.
+           TABLE HEADER: Cabeçalho de tabela.
+           TABLE DATA (tag td): Dado de tabela.-->
+    <table>
+        <tr> <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha"> <!--Segunda linha-->
+            <td>A2
+            <td>B2
+            <td>C2
+        
+        <tr> <!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--Quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="dado">C4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
