@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse; 
+            position: relative;
         }
         td, th {
             border: 2px solid black;
@@ -26,10 +27,20 @@
             background-color: rgb(21, 118, 216);
             color: white;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(21, 118, 216);
+            color: white;
+        } /*Com esse recurso é possivel fixar o cabeçalho da tabela (thead) na página. 
+        Pra isso é necessário, inicialmente deixar a tabela (table) no (position: relative;), e posteriormente no  "thead > tr > th {}" acrescentar o  (position: sticky;), e as demais configurações de ( top: -1px;) e o  background-color correspondente ao cabeçalho da tabela. Como no exemplo acima. */
+        
         tbody > tr:nth-child(2n) {
             background-color: rgba(70, 184, 222, 0.695);
         } 
-        /* Acrescentando ao tr a pseudo-classe nth-child(), é possivel criar o efeito zebrado, como no exemplo: tbody > tr:nth-child(2n){ background-color: rgba(70, 184, 222, 0.695);}. Uma outra forma de fazer é expecificando se o efeito será na linha par ou impar:
+        /* Acrescentando ao tr a pseudo-classe nth-child(), é possivel criar o efeito zebrado, como no exemplo: 
+           tbody > tr:nth-child(2n){ background-color: rgba(70, 184, 222, 0.695);}. 
+        Uma outra forma de fazer é especificando se o efeito será na linha par ou impar:
          Exemplo: 
            PAR (odd ou 2n-1) :
               tbody > tr:nth-child(odd) {
@@ -114,6 +125,7 @@
         </tfoot>
 
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius, officiis labore animi molestias esse, quam, reiciendis porro praesentium vitae rerum explicabo ex. Nostrum unde sequi quas enim omnis voluptatum?</p>
         
 </body>
 </html>
