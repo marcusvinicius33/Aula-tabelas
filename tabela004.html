@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem na tabela.</title>
+    <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            table {
+                border-collapse: collapse;
+                width: 400px;
+            }
+            td {
+                border:  2px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <h1> Mesclagem de células na tabela.</h1>
+    <!-- MESCLAGEM DE CÉLULAS DA TABELA
+    Existem duas expansões de mesglagem:
+        COLSPAN: Expansão em forma de Coluna. (Lembrando que coluna é em pé.)
+        ROWSPAN: Expansão em forma de Linha.(Lembrando que linha é em deitado.)
+    Veja nos exemplos abaixo:
+    -->
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--A célula B foi expandida para ocupar duas colunas.
+            --> 
+        </tr>
+        <tr>
+            <td rowspan="3">D</td> <!--A célula D foi expandida para ocupar tres linhas.-->
+            <td>E</td>
+            <td rowspan="2">F</td> <!--A célula F foi expandida para ocupar duas linhas.-->
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">M</td> <!--A célula M foi expandida para ocupar duas colunas.-->
+        </tr>
+    </table>
+
+    
+</body>
+</html>
