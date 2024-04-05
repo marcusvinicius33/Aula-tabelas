@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe conteúdo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+<!--Conteúdo no iframe: Para que o conteúdo de uma página própria abra na mesma página utilizando um iframe é necessaário dar um nome,"name", para o iframe, e dentro de um link, no "target" colocar o nome dado ao iframe, como no exemplo abaixo-->
+    <h1>Conteúdo no Iframe.</h1>
+    <h2>Faça uma escolha</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat optio enim mollitia repellat repudiandae voluptate. Tempora officiis consequatur asperiores dolor labore inventore reprehenderit nobis. Hic consectetur fugit corporis numquam ipsa!</p>
+    <ul>
+        <li> <a href="/Aula-tabelas/paginas-extras/pag001.html" target="frame">Primeira Página</a>.</li>
+        <li><a href="/Aula-tabelas/paginas-extras/pag002.html" target="frame">Segunda Página</a>.</li>
+        <li><a href="/Aula-tabelas/paginas-extras/pag003.html" target="frame">Terceira Página.</a></li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quo porro, dolor at illum nobis placeat ut explicabo magnam harum commodi laborum neque officiis, laboriosam sequi consectetur fugiat! Sapiente, illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur laboriosam, non ab obcaecati officiis. Nobis illum eligendi autem voluptatum deserunt animi corrupti, assumenda, quod provident dicta ad corporis magnam.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima.</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat optio enim mollitia repellat repudiandae voluptate. Tempora officiis consequatur asperiores dolor labore inventore reprehenderit nobis. Hic consectetur fugit corporis numquam ipsa!</p>" name="frame"></iframe>
+<!--É possivel criar um conteúdo html dentro do iframe usando o parametro "srcdoc", nele é possivel colocar tag de textos de imagens, como no exemplo acima.-->
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro laudantium dolor explicabo ab eum quos adipisci praesentium, iusto quam suscipit. Necessitatibus repellendus distinctio laudantium, sint commodi obcaecati ab laboriosam culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minus praesentium. Consectetur perspiciatis corporis quia nesciunt dolor sequi aut reiciendis illo distinctio odit, placeat doloremque cumque omnis pariatur incidunt voluptas.</p>
+   
+    
+    
+    
+</body>
+</html>
