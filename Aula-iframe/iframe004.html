@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe proteção</title>
+</head>
+<body>
+    <h1>Meu site protegido.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corrupti explicabo molestiae, numquam repellendus sed enim nisi mollitia, laboriosam asperiores atque adipisci ducimus, accusamus illo exercitationem quibusdam sit quae nam.</p>
+
+    <iframe src="/Aula-tabelas/paginas-extras/pag004.html" frameborder="1" sandbox="allow-popups-to-escape-sandbox" referrerpolicy="no-referrer"></iframe>
+    <!--Acrescentando o parametro "sandbox" ao iframe é possivel Aplicar restrições extras ao conteúdo do quadro. Assim, com a opção "allow-popups-to-escape-sandbox" o nivel de seguração chega ao máximo.
+    E com o parametro "referrerpolicy='no-referrer'", o conteúdo carregado dentro do iframe não coleta nenhum tipo de informação do usuário.
+    .-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto atque quia, dicta dolores, nisi fuga ullam ex tempora asperiores nihil a omnis iusto. Quasi velit perferendis praesentium cupiditate officiis.</p>
+
+    <iframe src="/Aula-tabelas/paginas-extras/pag004.html" frameborder="1" sandbox="allow-forms allow-same-origin allow-scripts" referrerpolicy="no-referrer"></iframe>
+    <!--Porém é possivel ligar algumas configurações do "sandbox", por exemplo o "allow-same-origin" permite o conteúdo da mesma origem; o "allow-forms" permite formulários, e o "allow-scripts" permite a execução de scripts-->
+    
+</body>
+</html>
